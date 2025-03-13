@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fomulário</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body{
+            background: linear-gradient(to bottom, #FFD700, #8A2BE2);
+            font-family: Arial, sans-serif;
+        }
+
+        .container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            
+        }
+
+        .formulario{
+            min-height: 80vh;
+            min-width: 30vw;
+            background-color: white;
+            box-shadow: 0 0 10px black;
+            display: flex;
+            flex-direction: column;
+            padding: 20px;
+        }
+
+        .dados{
+            display: flex;
+            justify-content: center;
+            height: 100%;
+        }
+
+        label{
+            display: block;
+        }
+
+        .input-group{
+            margin: 15px;
+        }
+
+        input{
+            width: 300px;
+            height: 70px;
+            font-size: 16px;
+        }
+
+        textarea{
+            width: 300px;
+            height: 70px;
+            font-size: 16px;
+        }
+
+        button{
+            width: 300px;
+            height: 40px;
+            background-color: green;
+            cursor: pointer;
+            border-radius: 7px;
+            font-size: 16px;
+
+        }
+
+        button:hover{
+            background-color: rgb(0, 107, 0);
+        }
+
+        ::placeholder{
+            font-size: 16px;
+        }
+
+    </style>
+
+</head>
+<body>
+    <div class="container">
+        <div class="formulario">
+            <div style="text-align: center; margin-top: 30px;">
+                <h1>Contato</h1>
+            </div>
+            <div class="dados">
+                <form id="form">
+                    <div class="input-group">
+                        <input type="text" id='name' placeholder="Nome" required>
+                    </div>
+                    <div class="input-group">
+                        <input type="email" id='email' placeholder="E-mail" required>
+                    </div>
+                    <div class="input-group">
+                        <input type="text" id='endereco' placeholder="Endereço" required>
+                    </div>
+                    <div class="input-group">
+                        <input type="text" id='cep' placeholder="CEP" required>
+                    </div>
+                    <div class="input-group">
+                        <input type="number" id='tel' placeholder="Telefone" required>
+                    </div>
+                    <div class="input-group">
+                        <textarea name="Mensagem:" id="msg" placeholder="Mensagem"></textarea>
+                    </div>
+
+                    <div style="text-align: center;">
+                        <button type="submit" >Enviar</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script>
+
+        const form = document.getElementById('form');
+        const name = document.getElementById('name');
+        const email = document.getElementById('email');
+        const ender = document.getElementById('endereco');
+        const cep = document.getElementById('cep');
+        const tel = document.getElementById('tel');
+        const msg = document.getElementById('msg');
+
+        form.addEventListener('submit', function(event) {
+            event.preventDefault();
+
+            if (name && email && ender && cep && tel && msg){
+
+                name.value = '';
+                email.value = '';
+                ender.value = '';
+                cep.value = '';
+                tel.value = '';
+                msg.value = '';
+
+                alert('Enviado!!')
+            }
+
+        });
+
+    </script>
+    
+</body>
+</html>

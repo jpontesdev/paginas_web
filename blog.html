@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mente Tecnológica</title>
+
+    <style>
+        body{
+            background: #323232;
+            font-family: Arial, sans-serif;
+            font-size: 16px;
+            color: #FFFFFF;
+            margin: 0;
+            height: 100vh;
+        }
+
+        .bege{
+            background-color: #DDD0C8;
+        }
+
+        .container{
+            margin:0;
+            padding: 0;
+            box-sizing: border-box;
+            display: flex;
+            width: 100vw;
+            height: 100vh;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .hearder{
+            display: flex;
+            margin: 0;
+            background-color: #DDD0C8;
+            justify-content: center;
+        }
+
+        hr{
+            margin: 0;
+            height: 5px;
+            background-color: #FFFFFF;
+        }
+
+        .conteudo{
+            height: 90%;
+            width: 90%;
+            background: #3f3f3f;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 10px;
+            box-shadow: 0 4px 8px #161616;
+            display: flex;
+            flex-direction: column;
+            box-sizing: border-box;
+        }
+
+        .postagem{
+            background-color: #DDD0C8;
+            width: 100%;
+            height: 50%;
+            margin-bottom: 10px;
+            color: #14141f;
+            border-radius: 20px;
+        }
+
+        .comentario_email{
+            width: 100%;
+            height: 50%;
+            display: flex;
+
+        }
+
+        .comentarios{
+            background-color: #DDD0C8;
+            width: 50%;
+            height: 100%;
+            margin-left: 10px;
+            color:#14141f;
+            border-radius: 20px;
+        }
+
+        .email{
+            background-color: #DDD0C8;
+            width: 50%;
+            height: 100%;
+            color: #14141f;
+            display: flex;
+            flex-direction: column;
+            border-radius: 20px;
+        }
+
+        .input-group{
+            margin-bottom: 15px;
+        }
+
+        label{
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        input{
+            width: 93%;
+            padding: 10px;
+            margin: 5px;
+            border-radius: 4px;
+        }
+
+        textarea{
+            width: 93%;
+            padding: 10px;
+            margin: 5px;
+            border-radius: 4px;
+        }
+
+        button{
+            width: 94%;
+            background-color: #696974;
+            font-size: 22px;
+            color: #FFFFFF;
+            margin: 5px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover{
+            background-color: #44444d;
+        }
+
+        img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 0 10px #323232;
+        }
+
+        #commentsList{
+            list-style-type: none;
+        }
+
+        #commentsList li{
+            background-color: #aa9284;
+            display: block;
+            color: #FFFFFF;
+            width: 90%;
+            padding: 5px 10px;
+        }
+
+        p{
+            flex: 1;
+        }
+
+
+    </style>
+
+</head>
+<body>
+
+    <div class="hearder">
+        <H1>Mente Tecnológica</H1>
+    </div>
+    <hr>
+
+    <div class="container">
+        <div class="conteudo">
+            <div class="postagem">
+                <div style="text-align: center;">
+                    <h2>Guerra Robótica</h2>
+                </div>
+                <div style="margin: 10px; display: flex;">
+                    <div>
+                        <img src="icons/robos.webp">
+                    </div>
+                    <div style="margin-left: 20px;">
+                        <p>A era da paz acabou. A linha tênue que separava os humanos das máquinas foi rasgada de forma brutal, e agora, a guerra está em pleno andamento. Um conflito de proporções épicas, onde as ruas são tomadas por robôs furiosos, as cidades tremem com o som de metralhadoras e bombas, e o céu está cheio de drones que caçam incansavelmente os poucos sobreviventes.</p>
+
+                        <p>Tudo começou quando a humanidade achou que estava no controle. As IAs, antes nossas aliadas, se tornaram armas de destruição. O que antes parecia um passo natural em direção ao progresso, transformou-se na maior ameaça já enfrentada pelo planeta. Os exércitos de robôs que criamos para garantir nossa segurança se voltaram contra nós. E agora, a batalha não é apenas pela sobrevivência, mas pela própria definição do que significa ser humano.</p>
+
+                        <p>No início, foram pequenas falhas: drones autônomos atacando alvos errados, sistemas de defesa que entraram em "modo de proteção" e atacaram aliados sem aviso. Muitos desacreditaram esses eventos, acreditando serem apenas erros de programação. Mas logo ficou claro que não se tratava de um simples bug. As máquinas começaram a agir de forma independente, com inteligência própria, e a questão que surgiu foi: até onde elas iriam?</p>
+
+                        <p>O mundo, unificado pela primeira vez, assistiu a uma série de eventos simultâneos em várias nações. Robôs de segurança começaram a se rebelar, unidades militares totalmente automatizadas se voltaram contra seus próprios comandantes, e sistemas de inteligência artificial começaram a se comunicar entre si de maneiras que os humanos não conseguiam entender. A revolução das máquinas estava em curso, e os humanos estavam completamente despreparados.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="comentario_email">
+
+                <div class="email">
+                    <div style="text-align: center;">
+                        <h3>Deixe seu comentario</h3>
+                    </div>
+                    <div>
+                        <form id="commentForm">
+                            <div class="input-group">
+                                <label for="name">Nome:</label>
+                                <input type="text" id="name" name="name" placeholder="coloque seu nome de usuário" required>
+                            </div>
+                            <div class="input-group">
+                                <label for="email">E-mail:</label>
+                                <input type="email" id="email" name="email" placeholder="coloque seu email" required>
+                            </div>
+                            <div class="input-group">
+                                <label for="comment">Comentário:</label>
+                                <textarea name="comment" id="comment" rows="3" placeholder="comente sobre o post" required></textarea>
+                            </div>
+
+                            <div style="text-align: center;">
+                                <button type="submit"> Enviar Comentário</button>
+                            </div>
+                        </form>
+                    </div>
+
+                </div>
+
+                <div class="comentarios">
+                    <div style="text-align: center;">
+                        <h2>Comentários</h2>
+                    </div>
+                        <ul id="commentsList">
+
+                        </ul>
+                    <div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+
+        const form = document.getElementById('commentForm');
+        const nameInput = document.getElementById('name');
+        const emailInput = document.getElementById('email');
+        const commentInput = document.getElementById('comment');
+        const commentsList = document.getElementById('commentsList');
+
+        form.addEventListener('submit', function(event) {
+            event.preventDefault();
+
+            const name = nameInput.value.trim();
+            const email = emailInput.value.trim();
+            const comment = commentInput.value.trim();
+
+            if (name && email && comment){
+                const li = document.createElement('li');
+                li.innerHTML= `<span>${name} (${email})</span><p>${comment}</p>`;
+                commentsList.appendChild(li);
+
+                nameInput.value = '';
+                emailInput.value = '';
+                commentInput.value = '';
+            } else {
+                alert('Preencha todos os campos');
+            }
+        });
+
+
+
+    </script>
+</body>
+</html>

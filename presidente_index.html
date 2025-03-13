@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carlos Almeida</title>
+    <style>
+        body {
+            background: #ecf0f1;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            color: #34495e
+        }
+
+        .header {
+            background: #3498DB;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            padding: 1px;
+            margin: 0;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            height: auto;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        .header h1 {
+            color: white;
+        }
+
+        .quadrado{
+            display: flex;
+            background: white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            box-sizing: border-box;
+            border-radius: 10px;
+            width: 100%;
+        }
+
+        .image{
+            margin-right: 10px;
+            border-radius: 10px;
+            width: 300px;
+            height: 200px;
+        }
+
+        hr{
+            margin: 0;
+        }
+
+        .texto {
+            flex: 1;
+            line-height: 1.6;
+        }
+
+        .header a{
+            padding: 10px;
+        }
+
+        .header a img{
+            transition: transform 0.3s ease;
+        }
+
+        .header a:hover img{
+            transform: scale(1.2);
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <h1>Carlos Almeida</h1>
+        <div>
+            <a href="https://instagram.com" target="_blank"><img src="./icons/instagram.svg" width="30px" height="30px"></a>
+            <a href="https://facebook.com" target="_blank"><img src=".\icons\facebook.svg" width="30px" height="30px"></a>
+            <a href="https://twitter.com" target="_blank"><img src=".\icons\x.svg" width="30px" height="30px"></a>
+        </div>
+    </div>
+
+    <hr>
+    <br>
+
+    <div class="container">
+        <div class="quadrado">
+            <img class="image" src="https://blog.auddas.com/wp-content/uploads/2023/06/Chairman-conheca-a-funcao-do-presidente-do-conselho-da-empresa-scaled.jpg">
+            
+            <div class="texto">
+                <p>Carlos Almeida é o presidente e fundador da Empresa XYZ, uma das líderes no setor de soluções tecnológicas para grandes corporações. Natural de Belo Horizonte, Carlos sempre teve uma paixão por ciência e tecnologia. Durante sua infância, desmontava aparelhos eletrônicos e passava horas programando no computador. Ele se formou em Engenharia de Sistemas pela Universidade Federal de Minas Gerais (UFMG) e, após alguns anos de experiência no mercado de tecnologia, decidiu fundar a XYZ.</p>
+
+                <p>A empresa começou como uma pequena startup, mas sob sua liderança, cresceu para uma gigante global que atende clientes em mais de 30 países. Carlos é conhecido por seu estilo de liderança disruptivo, sempre desafiando as convenções e incentivando a inovação constante dentro da empresa.</p>
+                    
+                <p>Fora do trabalho, Carlos é um defensor das tecnologias sustentáveis e de como as empresas podem atuar de maneira mais responsável em relação ao meio ambiente. Ele também é um grande mentor para jovens empreendedores, frequentemente participando de eventos e palestras sobre inovação e negócios.</p>
+
+                <p>Suas Hobbies são:</p>
+                <ul>
+                    <li>Mergulho</li>
+                    <li>Cozinhar</li>
+                    <li>Artes Marciais</li>
+                    <li>Caminhadas</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
