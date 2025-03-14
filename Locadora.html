@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Locadora</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body{
+            background-color: #1A1A1D;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .header{
+            padding: 40px;
+            display: flex;
+        }
+
+        a{
+            text-decoration: none;
+            margin-left: 30px;
+            background-color: #26262b;
+            padding: 10px;
+            border-radius: 10px;
+            color: white
+        }
+
+        a:hover{
+            scale: 1.1;
+            cursor: pointer;
+        }
+
+        h3{
+            color: white;
+            font-size: 25px;
+        }
+
+        .container{
+            display: flex;
+            justify-content: center;
+            margin-top: 50px;
+        }
+
+        .filmes{
+            width: 95vw;
+            height: 80vh;
+          
+
+        }
+
+        p{
+            color:white
+        }
+
+        .rating {
+            display: flex;
+            justify-content: center;
+            flex-direction: row-reverse;
+        }
+
+        .rating input {
+            display: none;
+        }
+
+        .rating label {
+            font-size: 50px;
+            color: #ccc;
+            cursor: pointer;
+            transition: color 0.3s;
+        }
+
+        .rating input:checked ~ label {
+            color: gold;
+        }
+
+        .rating label:hover,
+        .rating label:hover ~ label {
+            color: gold;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div>
+            <h3>CinePipoquinha</h3>
+        </div>
+        <div style="display: flex; align-items: center;">
+            <a href="Locadora.html">Filmes</a>
+        </div>
+    </div>
+    <div style="display: flex;">
+        <img src="https://s2-gshow.glbimg.com/owBUNIfqQUvuNqUC9h1tU_OuwvM=/0x0:1920x1080/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_e84042ef78cb4708aeebdf1c68c6cbd6/internal_photos/bs/2024/D/R/Ik6dBDQo2z0lN7CSyESA/filmes-e-series-do-globoplay-para-maratonar.jpg" width="984px" height="554">
+        <img src="https://t2.tudocdn.net/687837?w=824&h=494" width="984px" height="554">
+    </div>
+
+    <div class="container">
+        <div class="filmes">
+            <div style="display: flex;">
+                <h3 style="color: #A64D79;">Filmes</h3><h3 style="margin-left: 10px;">lançamentos</h3>
+            </div>
+        
+            <div style="display: flex; justify-content: space-between;">
+                <div style="margin: 20px; display: flex; flex-direction: column;">
+                    <img src="https://www.pegaessanovidade.com.br/wp-content/uploads/2021/11/image004-1-1-437x445.jpg" width="300px">
+                    <video controls width="300px" height="300px">
+                        <source src="icons/Trailer_homem_aranha.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div style="display: flex; flex-direction: column; width: 30vw;" >
+                    <h3 style="color: red; text-align: center;">Homem-Aranha</h3>
+                    <p>Depois de lutar ao lado dos Vingadores, chegou a hora do jovem Peter Parker voltar para casa em Nova York ao lado de sua tia May. Sob o olhar atento do mentor Tony Stark, Peter começa a abraçar sua nova identidade como Homem-Aranha e combate diariamente pequenos crimes nas redondezas. Ele acredita que encontrou a missão de sua vida quando o terrível vilão Abutre surge ameaçando a cidade. O problema é que a tarefa não será tão fácil como ele imaginava.</p>
+                </div>
+
+                <div>    
+                    
+                    <h3 style="color: white;">Avalie este filme:</h3>
+                    <div class="rating">
+                        <input type="radio" id="star5" name="rating" value="5">
+                        <label for="star5">★</label>
+                        <input type="radio" id="star4" name="rating" value="4">
+                        <label for="star4">★</label>
+                        <input type="radio" id="star3" name="rating" value="3">
+                        <label for="star3">★</label>
+                        <input type="radio" id="star2" name="rating" value="2">
+                        <label for="star2">★</label>
+                        <input type="radio" id="star1" name="rating" value="1">
+                        <label for="star1">★</label>
+                    </div></div>
+            </div>
+        </div>
+    </div>
+
+    
+    
+</body>
+</html>

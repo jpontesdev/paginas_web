@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeria</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body{
+            background-color: aliceblue;
+        }
+
+        .header{
+            background-color: white;
+            padding: 40px;
+            box-shadow: 0 0 4px 8px rgba(0, 0, 0, 0.2);
+            text-align: center;
+        }
+
+        .artista{
+            background-color: rgb(228, 228, 228);
+            padding: 40px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .artista img:hover{
+            scale: 1.2;
+            cursor: pointer;
+        }
+
+        .imagens{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .imagens img{
+            margin: 20px;
+        }
+
+        .tabela{
+            display: flex;
+            margin-top: 80px;
+            justify-content: center;
+        }
+
+        th, td {
+            border: 2px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h2>Galeria</h2>
+    </div>
+
+    <div class="artista">
+        <div style="margin-left: 300px;"><h2>ARTISTA</h2></div>
+        <div></div>
+        <div style="margin-right: 300px;">
+            <img src="icons/instagram.svg" width="30px">
+            <img src="icons/facebook.svg" width="30px">
+        </div>
+    </div>
+
+    <div class="imagens">
+        <div style="display: flex; align-items: center;">
+            <img src="https://belgaleriadearte.com.br/acervo/images/10850/121537202212076390ae192e1d4.jpeg?w=350">
+            <img src="https://belgaleriadearte.com.br/acervo/images/11530/1702212024062066748acdd5f39.jpeg?w=350">
+            <img src="https://belgaleriadearte.com.br/artista/images/1014232025021867b487afdf4ea.jpeg?w=350">
+            <img src="https://belgaleriadearte.com.br/artista/images/111012202501286798e544684ac.jpeg?w=350">
+        </div>
+        <div style="display: flex; align-items: center;">
+            <img src="https://belgaleriadearte.com.br/artista/images/120527202305176464ed37697c9.jpeg?w=350">
+            <img src="https://belgaleriadearte.com.br/acervo/images/11575/1007332024081966c3439597b0f.jpeg?w=350">
+            <img src="https://belgaleriadearte.com.br/acervo/images/11270/140445202311256562292dd2fa5.jpeg?w=350">
+            <img src="https://belgaleriadearte.com.br/artista/images/1401102021061860ccd1563167d.jpeg?w=350">
+        </div>
+
+
+    </div>
+
+    <div class="tabela">
+        <table>
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>Descrição</th>
+                    <th>Data</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th>Paisagem no Campo</th>
+                    <th>Encomendada por Pietro Maria Bardi para onde se trata de registro da vista panorâmica da cidade, observada do alto do edifício do Banco do Estado de São Paulo</th>
+                    <th>1977</th>
+                </tr>
+                <tr>
+                    <th>Paisagem Mineira</th>
+                    <th>Feito por Alberto da Veiga Guignard representação da paisagem de sua cidade</th>
+                    <th>1950</th>
+                </tr>
+                <tr>
+                    <th>Cavalo</th>
+                    <th>A sua vasta obra, importantíssima para o panorama das artes plásticas no Brasil, pela qualidade técnica e por interpretar o “ser” brasileiro, carrega a marca da paisagem e do homem do nordeste.</th>
+                    <th>1981</th>
+                </tr>
+                <tr>
+                    <th>Casario I</th>
+                    <th>O artista tem importante atuação, entre os anos 1930 e 1940, na consolidação da arte moderna paulista e, como aponta a estudiosa Lisbeth Rebollo, é um dos pioneiros no desenvolvimento da arte abstrata no Brasil.</th>
+                    <th>1979</th>
+                </tr>
+            </tbody>
+        </table>
+
+
+
+    </div>
+    
+</body>
+</html>

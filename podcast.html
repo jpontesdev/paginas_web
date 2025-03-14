@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Podcast</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body{
+            background-color: rgb(43, 0, 63);
+        }
+
+        .header{
+            padding: 30px;
+            background-color: rgb(117, 0, 226);
+            display: flex;
+            justify-content: center;
+        }
+
+        .player{
+           display: flex;
+           justify-content: center;
+           margin-top: 130px;
+        }
+
+        .video{
+            width: 80vw;
+            height: 600px;
+            background-color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .play{
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+            background-color: rgb(121, 7, 7);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .triangulo{
+            width: 0px;
+            height: 0px;
+            border-left: 20px solid transparent;
+            border-right: 20px solid transparent; 
+            border-bottom: 20px solid #b4b4b4;
+            transform: rotate(90deg);
+        }
+
+        .play:hover{
+            scale: 1.2;
+            cursor: pointer;
+        }
+
+        .eps{
+            display: flex;
+            justify-content: center;
+            
+        }
+
+        .lista{
+            width: 70vw;
+            height: 55vh;
+            background-color: rgb(34, 34, 34);
+            margin-top: 30px;
+            border-radius: 20px ;
+        }
+
+        th{
+            color: white;
+            padding: 10px;
+            margin: 50px;
+        }
+
+        table img{
+            width: 30px;
+        }
+
+        table img:hover{
+            scale: 1.2;
+            cursor: pointer;
+        }
+
+        .barra{
+            width: 55vw;
+            height: 2px;
+            background-color: white;
+            margin-left: 10px;
+            display: flex;
+            align-items: center;
+        }
+
+        .bolinha{
+            width: 10px;
+            height: 10px;
+            background-color: white;
+            border-radius: 50%;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1 style="color: white;">PotacioCast</h1>
+    </div>
+    <div class="player">
+        <div class="video">
+            <div class="play">
+                <div class="triangulo"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="eps">
+        <div class="lista">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Episódio</th>
+                            <th>
+                                <img src="icons/botao-play.png">
+                            </th>
+                        <th>Duração</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th>#1</th>
+                        <th>
+                            <div style="display: flex; align-items: center;">
+                                <div>
+                                    <img src="icons/botao-play.png">
+                                </div>
+                                <div class="barra">
+                                    <div class="bolinha"></div>
+                                </div>
+                            </div>
+                        </th>
+                        <th>00:52:00</th>
+                    </tr>
+                    <tr>
+                        <th>#2</th>
+                        <th>
+                            <div style="display: flex; align-items: center;">
+                                <div>
+                                    <img src="icons/botao-play.png">
+                                </div>
+                                <div class="barra">
+                                    <div class="bolinha"></div>
+                                </div>
+                            </div>
+                        </th>
+                        <th> 01:13:00</th>
+                    </tr>
+                    <tr>
+                        <th>#3</th>
+                        <th>
+                            <div style="display: flex; align-items: center;">
+                                <div>
+                                    <img src="icons/botao-play.png">
+                                </div>
+                                <div class="barra">
+                                    <div class="bolinha"></div>
+                                </div>
+                            </div>
+                        </th>
+                        <th>00:33:00</th>
+                    </tr>
+                    <tr>
+                        <th>#4</th>
+                        <th>
+                            <div style="display: flex; align-items: center;">
+                                <div>
+                                    <img src="icons/botao-play.png">
+                                </div>
+                                <div class="barra">
+                                    <div class="bolinha"></div>
+                                </div>
+                            </div>
+                        </th>
+                        <th>01:01:00</th>
+                    </tr>
+                    <tr>
+                        <th>#5</th>
+                        <th>
+                            <div style="display: flex; align-items: center;">
+                                <div>
+                                    <img src="icons/botao-play.png">
+                                </div>
+                                <div class="barra">
+                                    <div class="bolinha"></div>
+                                </div>
+                            </div>
+                        </th>
+                        <th>01:28:00</th>
+                    </tr>
+                    <tr>
+                        <th>#6</th>
+                        <th>
+                            <div style="display: flex; align-items: center;">
+                                <div>
+                                    <img src="icons/botao-play.png">
+                                </div>
+                                <div class="barra">
+                                    <div class="bolinha"></div>
+                                </div>
+                            </div>
+                        </th>
+                        <th>00:45:00</th>
+                    </tr>
+                    <tr>
+                        <th>#7</th>
+                        <th>
+                            <div style="display: flex; align-items: center;">
+                                <div>
+                                    <img src="icons/botao-play.png">
+                                </div>
+                                <div class="barra">
+                                    <div class="bolinha"></div>
+                                </div>
+                            </div>
+                        </th>
+                        <th>00:25:00</th>
+                    </tr>
+                    <tr>
+                        <th>#8</th>
+                        <th>
+                            <div style="display: flex; align-items: center;">
+                                <div>
+                                    <img src="icons/botao-play.png">
+                                </div>
+                                <div class="barra">
+                                    <div class="bolinha"></div>
+                                </div>
+                            </div>
+                        </th>
+                        <th>00:59:00
+                        </th>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+   
+</body>
+</html>
