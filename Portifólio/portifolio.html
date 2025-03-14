@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portifólio</title>
+
+    <style>
+
+        .cores{
+            color: #3D8D7A
+            #B3D8A8
+            #A3D1C6
+            #FBFFE4
+        }
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body{
+            background: #3D8D7A;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .header{
+            background-color: #B3D8A8;
+            align-items: center;
+            justify-content: space-between;
+            display: flex;
+            text-align: center;
+        }
+
+        h1, h2{
+            color: #FBFFE4;
+            flex-grow: 1;
+        }
+
+        .footer {
+            background-color: #B3D8A8;
+            color: white;
+            height: 100px;
+            position: relative;
+            bottom: -100vh;
+            width: 100%;
+        }
+
+        .projetcts{
+            display: flex;
+        }
+
+        .Biografia{
+            width: 80%;
+            height: 80%;
+            background-color: #A3D1C6;
+            border-radius: 20px;
+            padding: 15px;
+        }
+
+        p{
+            margin-left: 10px;
+            font-size: 20px;
+            line-height: 1.6;
+        }
+
+        a{
+            margin-right: 10px;
+        }
+
+        /*https://www.hostinger.com/tutorials/portfolio-website-examples?utm_campaign=Generic-Tutorials-DSA|NT:Se|LO:BR-EN&utm_medium=ppc&gad_source=1&gclid=Cj0KCQiAlbW-BhCMARIsADnwasryAMQ1vkyBb64oY2yVBSspWxJUR--Pvt_2XFOCBi7EyHi5MSUa5QwaAmIiEALw_wcB*/
+
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div>
+            <img src="icons/logo.png" width="100px">
+        </div>
+        <div>
+            <h1>João Pontes</h1>
+            <h2>Engenheiro de Computação</h2>
+        </div>
+        <div>
+            <a href="projetos.html">Experiências</a>
+        </div>
+    </div>
+    <hr>
+
+    <div style="display: flex; justify-content: center; align-items: center; height: 100vh;">
+        <div class="Biografia">
+            <div>
+                <H1>BIOGRAFIA</H1>
+            </div>
+            <div style="display: flex;">
+                <div>
+                    <img src="icons/joao_fake.png" width="300px" style="border-radius: 20px;">
+                </div>
+                <div>
+                    <p>João Vitor, um jovem engenheiro de computação de 20 anos, é apaixonado por inovação e desenvolvimento de hardware. Desde cedo, sempre demonstrou curiosidade em criar e aprimorar dispositivos tecnológicos, combinando programação e eletrônica para dar vida a suas ideias.</p>
+
+                    <p>Além da engenharia, João Vitor tem uma personalidade dinâmica e gosta de desafios. No tempo livre, pratica esportes para manter a mente e o corpo ativos, e sempre está em busca de aprender algo novo. Ele tem um grande interesse por tecnologia, mas também aprecia atividades ao ar livre, como andar de bicicleta e explorar novas trilhas. </p>
+
+                    <p>Leitor ávido, gosta de livros sobre inovação, ficção científica e biografias de grandes inventores, o que alimenta ainda mais sua criatividade. Nos momentos de descontração, gosta de jogar videogames e acompanhar competições de eSports.</p>
+                        
+                    <p>Com uma mentalidade empreendedora, João Vitor está sempre desenvolvendo novos projetos e aprimorando suas habilidades. Seu sonho é criar tecnologias que facilitem a vida das pessoas e abrir sua própria empresa no futuro. Determinado e visionário, ele segue sua jornada com dedicação, buscando deixar sua marca no mundo da computação e da engenharia.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div style="margin: 10px;">
+            <h2>Contatos</h2>
+        </div>
+    </div>
+</body>
+</html>
